@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#e0ac69]">
+    <body class="bg-[#e0ac69]">
+        <h1 class="text-center text-[5vw]">Edit Event Form</h1>
+        <div class="flex justify-center">
+            <div class="flex justify-center">
+                <form action="/data/<%= event.wedding_id %>" method="POST" class="bg-gray-300 h-auto w-[60vw] p-6 rounded-xl">
+                    <fieldset>
+                    <h4 class="text-center text-[1.25vw] mb-[2.5vh]">Edit Event Information Here.</h4>
+                    <div class="grid-cols-2 grid gap-[1vw]">
+                        <div>
+                            <label for="bride_name" class="block mb-2 text-[1.25vw] font-medium text-gray-900">Bride's Name:</label>
+                            <input name="bride_name" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.bride_name %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Groom's Name:</label>
+                            <input name="groom_name" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.groom_name %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Wedding Date:</label>
+                            <input name="wedding_date" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.wedding_date %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Venue Name:</label>
+                            <input name="venueName" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.venue.name %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Venue Address:</label>
+                            <input name="venueAddress" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.venue.address %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Guest Capacity:</label>
+                            <input name="guest_capacity" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.guest_capacity %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Ceremony Event's Name:</label>
+                            <input name="eventsName1" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[0].name %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Ceremony Event's Location:</label>
+                            <input name="eventsLocation1" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[0].location %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Ceremony Event's Starting time</label>
+                            <input name="eventsStart1" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[0].start_time %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Ceremony Event's Ending time</label>
+                            <input name="eventsEnd1" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[0].end_time %>" required>
+                        </div>
+    
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Reception Event's Name:</label>
+                            <input name="eventsName2" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[1].name %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Reception Event's Location:</label>
+                            <input name="eventsLocation2" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[1].location %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Reception Event's Starting time</label>
+                            <input name="eventsStart2" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[1].start_time %>" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-[1.25vw] font-medium text-gray-900">Reception Event's Ending time</label>
+                            <input name="eventsEnd2" type="text" class="w-full border-solid border-2 border-[#1e0e4b] rounded-md p-2" value="<%= event.events[1].end_time %>" required>
+                        </div>
+                    </div>
+                    <div class="flex justify-center mt-[1.5vh]">
+                        <button type="submit" class="bg-slate-600 h-[6vh] w-[13vw] text-[1.25vw] text-white rounded-xl">Save Changes</button>
+                    </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+    
+        
+
+</body>
+</html>

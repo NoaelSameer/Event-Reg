@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#e0ac69]">
+    <h1 class="text-[5vw] text-center">Wedding Events</h1>
+    <div class="flex justify-center mt-[5vh]">
+        <button class="bg-slate-600 h-[10vh] w-[17vw] text-[2vw] rounded-xl" 
+          onclick="window.location.href='/newEvent'">Add New Event</button>
+      </div>
+      
+      <!-- 
+        "wedding_id": 1,
+        "bride_name": "Oliver Andrew Kuopos",
+        "groom_name": "Juvraj Singh",
+        "wedding_date": "06/15/2024",
+        "venue": {
+          "name": "Rosewood Gardens",
+          "address": "123 Blossom Street, Springfield, IL"
+        },
+        "guest_capacity": 150,
+        "ceremony_time": "3:00PM",
+        "reception_time": "6:00PM",
+        "events": [
+          {
+            "name": "Ceremony",
+            "location": "Rosewood Gardens",
+            "start_time": "3:00PM",
+            "end_time": "4:00PM"
+          },
+          {
+            "name": "Reception",
+            "location": "Rosewood Ballroom",
+            "start_time": "6:00PM",
+            "end_time": "11:00PM"
+          } -->
+
+
+
+    </div>
+    <ul>
+        <ul>
+            <% data.forEach((event) => { %>
+                <li>
+                    <div class="event text-center my-[7vh] box-border border-2 border-gray-500 p-4 rounded-lg">
+                        <div class="event-details">
+                            <h3 class="event-name text-[2vw] font-semibold"><%= event.bride_name %> X <%= event.groom_name %></h3>
+                            <h5 class="wedding-date text-gray-600"><%= event.wedding_date %></h5>
+                            <p class="event-location"><strong>Venue:</strong> <%= event.venue.name %>, <%= event.venue.address %></p>
+            
+                            <div class="event-schedule mt-4">
+                                <ul>
+                                    <% event.events.forEach((eventer) => { %>
+                                        <li>
+                                            <p><strong><%= eventer.name %></strong> at <%= eventer.location %> (<%= eventer.start_time %> - <%= eventer.end_time %>)</p>
+                                        </li>
+                                    <% }); %>
+                                </ul>
+                            </div>
+            
+                            <div class="mt-2">
+                                <form action="/editor/<%= event.wedding_id %>" method="POST" style="display:inline;">
+                                    <button type="submit" class="bg-slate-600 h-[6vh] w-[13vw] text-[1.5vw] rounded-xl">Edit</button>
+                                </form>
+                                <form action="/delete/<%= event.wedding_id %>" method="POST" style="display:inline;">
+                                    <button type="submit" class="bg-slate-600 h-[6vh] w-[13vw] text-[1.5vw] rounded-xl">Delete</button>
+                                </form>
+                                
+    
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            <% }); %>            
+        </ul>
+        
+        
+    </ul>
+</body>
+</html>

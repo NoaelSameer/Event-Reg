@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#e0ac69]">
+    <h1 class="text-[5vw] text-center">Wedding Events</h1>
+    <ul>
+        <ul>
+            <% data.forEach((event) => { %>
+                <li>
+                    <div class="event text-center my-[7vh] box-border border-2 border-gray-500 p-4 rounded-lg">
+                        <div class="event-details">
+                            <h3 class="event-name text-[2vw] font-semibold"><%= event.bride_name %> X <%= event.groom_name %></h3>
+                            <h5 class="wedding-date text-gray-600"><%= event.wedding_date %></h5>
+                            <p class="event-location"><strong>Venue:</strong> <%= event.venue.name %>, <%= event.venue.address %></p>
+                            
+                            <div class="event-schedule mt-4">
+                                <ul>
+                                    <% event.events.forEach((eventer) => { %>
+                                        <li>
+                                            <p><strong><%= eventer.name %></strong> at <%= eventer.location %> (<%= eventer.start_time %> - <%= eventer.end_time %>)</p>
+                                        </li>
+                                    <% }); %>
+                                </ul>
+                            </div>
+                            <p class="mt-5 text-[1.75vw]">Attending?</p>
+                            <form action="/data<%= event.wedding_id %>" method="POST" style="display:inline;">
+                                <button type="submit" class="mt-2 bg-slate-600 h-[6vh] w-[13vw] text-[1.5vw] rounded-xl" onclick="Registerer()">Register Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+        
+    </ul>
+
+    <script>
+        function Registerer(){
+            alert("Registration Successful!");
+        }
+    </script>
+</body>
+</html>

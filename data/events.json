@@ -1,0 +1,310 @@
+[
+  {
+    "wedding_id": 3,
+    "bride_name": "Olivia Martin",
+    "groom_name": "Daniel Garcia",
+    "wedding_date": "10/12/2026",
+    "venue": {
+      "name": "Golden Gate Manor",
+      "address": "789 Sunset Blxvd, San Francisco, CA"
+    },
+    "guest_capacity": "3",
+    "guests_attending": 0,
+    "ceremony_time": "4:00PM",
+    "reception_time": "7:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Golden Gate Manor Garden",
+        "start_time": "4:00PM",
+        "end_time": "5:00PM"
+      },
+      {
+        "name": "Dinner",
+        "location": "Manor Dining Hall",
+        "start_time": "7:00PM",
+        "end_time": "9:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 4,
+    "bride_name": "Lily Anders",
+    "groom_name": "William Brown",
+    "wedding_date": "05/10/2024",
+    "venue": {
+      "name": "Seaside Cliff Resort",
+      "address": "12 Ocean View Ave, Malibu, CA"
+    },
+    "guest_capacity": "150",
+    "guests_attending": 0,
+    "ceremony_time": "1:00PM",
+    "reception_time": "2:30PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Cliffside Garden",
+        "start_time": "1:00PM",
+        "end_time": "2:00PM"
+      },
+      {
+        "name": "Cocktail Hour",
+        "location": "Sunset Deck",
+        "start_time": "2:30PM",
+        "end_time": "3:30PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 5,
+    "bride_name": "Emily Davis",
+    "groom_name": "Thomas Wilson",
+    "wedding_date": "03/12/2025",
+    "venue": {
+      "name": "Woodland Chateau",
+      "address": "334 Forest Road, Asheville, NC"
+    },
+    "guest_count": 120,
+    "guests_attending": 0,
+    "ceremony_time": "12:00PM",
+    "reception_time": "3:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Chateau Garden",
+        "start_time": "12:00PM",
+        "end_time": "1:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Chateau Ballroom",
+        "start_time": "3:00PM",
+        "end_time": "8:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 6,
+    "bride_name": "Ava Harris",
+    "groom_name": "Ethan Clark",
+    "wedding_date": "07/18/2026",
+    "venue": {
+      "name": "Mountain Ridge Lodge",
+      "address": "111 Peak Drive, Boulder, CO"
+    },
+    "guest_count": 90,
+    "guests_attending": 0,
+    "ceremony_time": "2:00PM",
+    "reception_time": "5:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Mountain Overlook",
+        "start_time": "2:00PM",
+        "end_time": "3:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Lodge Terrace",
+        "start_time": "5:00PM",
+        "end_time": "9:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 7,
+    "bride_name": "Mia Lewis",
+    "groom_name": "Noah Walker",
+    "wedding_date": "05/20/2027",
+    "venue": {
+      "name": "Riverfront Pavilion",
+      "address": "678 Riverside Dr, Portland, OR"
+    },
+    "guest_count": 200,
+    "guests_attending": 0,
+    "ceremony_time": "3:00PM",
+    "reception_time": "6:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Pavilion Lawn",
+        "start_time": "3:00PM",
+        "end_time": "4:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Pavilion Banquet Hall",
+        "start_time": "6:00PM",
+        "end_time": "11:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 8,
+    "bride_name": "Isabella Scott",
+    "groom_name": "Lucas Green",
+    "wedding_date": "06/30/2025",
+    "venue": {
+      "name": "Desert Bloom Ranch",
+      "address": "923 Cactus Lane, Phoenix, AZ"
+    },
+    "guest_count": 160,
+    "guests_attending": 0,
+    "ceremony_time": "5:00PM",
+    "reception_time": "7:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Cactus Garden",
+        "start_time": "5:00PM",
+        "end_time": "6:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Ranch Barn",
+        "start_time": "7:00PM",
+        "end_time": "8:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 9,
+    "bride_name": "Sophia Martinez",
+    "groom_name": "Henry Wright",
+    "wedding_date": "11/14/2025",
+    "venue": {
+      "name": "Autumn Hills Estate",
+      "address": "99 Maple Leaf Road, Denver, CO"
+    },
+    "guest_count": 140,
+    "guests_attending": 0,
+    "ceremony_time": "2:00PM",
+    "reception_time": "5:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Estate Gardens",
+        "start_time": "2:00PM",
+        "end_time": "3:00PM"
+      },
+      {
+        "name": "Dinner",
+        "location": "Estate Hall",
+        "start_time": "5:00PM",
+        "end_time": "9:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 10,
+    "bride_name": "Amelia Gonzalez",
+    "groom_name": "Jack Robinson",
+    "wedding_date": "01/11/2023",
+    "venue": {
+      "name": "Snow Peak Lodge",
+      "address": "456 Glacier Rd, Jackson, WY"
+    },
+    "guest_count": 100,
+    "guests_attending": 0,
+    "ceremony_time": "12:00PM",
+    "reception_time": "3:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Snow Peak Chapel",
+        "start_time": "12:00PM",
+        "end_time": "1:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Lodge Hall",
+        "start_time": "3:00PM",
+        "end_time": "7:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 11,
+    "bride_name": "Charlotte King",
+    "groom_name": "Alexander Scott",
+    "wedding_date": "09/02/2025",
+    "venue": {
+      "name": "Crystal Bay Resort",
+      "address": "213 Shoreline Dr, Miami, FL"
+    },
+    "guest_count": 220,
+    "guests_attending": 0,
+    "ceremony_time": "2:00PM",
+    "reception_time": "5:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Beachfront",
+        "start_time": "2:00PM",
+        "end_time": "3:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Oceanview Terrace",
+        "start_time": "5:00PM",
+        "end_time": "10:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 12,
+    "bride_name": "Harper Hill",
+    "groom_name": "Sebastian Young",
+    "wedding_date": "08/18/2025",
+    "venue": {
+      "name": "Lakeview Lodge",
+      "address": "567 Lake Ave, Seattle, WA"
+    },
+    "guest_count": 110,
+    "guests_attending": 1,
+    "ceremony_time": "3:00PM",
+    "reception_time": "6:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Lakeview Garden",
+        "start_time": "3:00PM",
+        "end_time": "4:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Lodge Hall",
+        "start_time": "6:00PM",
+        "end_time": "11:00PM"
+      }
+    ]
+  },
+  {
+    "wedding_id": 13,
+    "bride_name": "Evelyn Ramirez",
+    "groom_name": "Mason Lee",
+    "wedding_date": "05/8/2028",
+    "venue": {
+      "name": "Winterfell Castle",
+      "address": "789 Snowy Lane, Anchorage, AK"
+    },
+    "guest_count": 90,
+    "guests_attending": 0,
+    "ceremony_time": "1:00PM",
+    "reception_time": "4:00PM",
+    "events": [
+      {
+        "name": "Ceremony",
+        "location": "Castle Courtyard",
+        "start_time": "1:00PM",
+        "end_time": "2:00PM"
+      },
+      {
+        "name": "Reception",
+        "location": "Castle Ballroom",
+        "start_time": "4:00PM",
+        "end_time": "9:00PM"
+      }
+    ]
+  }
+]
