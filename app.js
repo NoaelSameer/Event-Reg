@@ -81,7 +81,7 @@ app.post("/Adder", function (req, res) {
     app.post("/data/:wedding_id", function (req, res) {
         const data = getEvents(); 
         const wedding_id = parseInt(req.params.wedding_id);
-        const event = data.find(event => event.wedding_id === wedding_id);
+        const event = data.find(event => event.wedding_id == wedding_id);
     
         if (event) {
             event.guests_attending = (event.guests_attending || 0) + 1; 
